@@ -1,0 +1,56 @@
+{
+  "name": "coaxia-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Coaxia - Advanced Software Solutions Agency",
+  "author": "Coaxia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yomal2003/New-Web"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
+    "build": "tsc && vite build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build:all": "npm run build && npm run build:server",
+    "preview": "vite preview",
+    "start": "node dist/server/index.js",
+    "start:server": "node dist/server/index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.31.0",
+    "lucide-react": "^0.555.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "framer-motion": "^12.23.25",
+    "react-router-dom": "^6.22.3",
+    "@remix-run/router": "^1.15.3",
+    "axios": "^1.6.0",
+    "recharts": "^2.10.0",
+    "react-markdown": "^9.0.1",
+    "react-hot-toast": "^2.4.1",
+    "date-fns": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "tsx": "^4.7.0",
+    "concurrently": "^8.2.2"
+  }
+}

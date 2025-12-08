@@ -1,0 +1,7 @@
+{
+  "name": "Coaxia - Advanced Software Agency",
+  "description": "A high-performance React application for a premium software development agency specializing in AI, travel, and logistics solutions.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,43 @@
+# Files to ignore during Vercel deployment
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.example
+.env.production.example
+
+# Development files
+*.md
+!DEPLOYMENT.md
+COMMANDS.md
+FINAL_NOTES.md
+IMPLEMENTATION_SUMMARY.md
+QUICKSTART.md
+setup.ps1
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node modules (Vercel installs these)
+node_modules
+
+# Development artifacts
+.DS_Store
+*.local
