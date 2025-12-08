@@ -14,7 +14,8 @@
     "dev": "vite",
     "dev:server": "tsx watch server/index.ts",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "vercel-build": "vite build",
     "build:server": "tsc -p tsconfig.server.json",
     "build:all": "npm run build && npm run build:server",
     "preview": "vite preview",
@@ -33,7 +34,13 @@
     "recharts": "^2.10.0",
     "react-markdown": "^9.0.1",
     "react-hot-toast": "^2.4.1",
-    "date-fns": "^3.0.0"
+    "date-fns": "^3.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
@@ -44,12 +51,7 @@
     "@types/cors": "^2.8.17",
     "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.5",
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "mongoose": "^8.0.0",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
+    "@vercel/node": "^3.0.0",
     "tsx": "^4.7.0",
     "concurrently": "^8.2.2"
   }
