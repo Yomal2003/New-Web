@@ -166,48 +166,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      /* {/* --- LEADERSHIP TEAM --- */}
-      <Section className="py-24">
-         <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Meet the Leadership</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
-               Our team is led by industry veterans who have delivered successful projects for startups and enterprises alike.
-            </p>
-         </div>
-
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, idx) => (
-               <motion.div 
-                 key={idx}
-                 initial={{ opacity: 0, scale: 0.9 }}
-                 whileInView={{ opacity: 1, scale: 1 }}
-                 viewport={{ once: true }}
-                 transition={{ delay: idx * 0.1 }}
-                 className="group relative"
-               >
-                  <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100 mb-4 relative">
-                     <img 
-                       src={member.img} 
-                       alt={member.name} 
-                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale group-hover:grayscale-0" 
-                     />
-                     {/* Overlay */}
-                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <p className="text-white text-sm mb-4">{member.bio}</p>
-                        <div className="flex gap-4">
-                           <a href="#" className="text-brand-lime hover:text-white transition-colors"><Linkedin size={20}/></a>
-                           <a href="#" className="text-brand-lime hover:text-white transition-colors"><Twitter size={20}/></a>
-                        </div>
-                     </div>
-                  </div>
-                  <h3 className="text-xl font-bold text-brand-dark">{member.name}</h3>
-                  <p className="text-sm font-medium text-brand-blue uppercase tracking-wider">{member.role}</p>
-               </motion.div>
-            ))}
-         </div>
-      </Section>
- */
-      {/* --- CULTURE GALLERY --- */}
+            {/* --- CULTURE GALLERY --- */}
       <div className="bg-brand-dark text-white py-24 overflow-hidden">
          <div className="max-w-7xl mx-auto px-4 mb-12 flex justify-between items-end">
              <div>
