@@ -166,7 +166,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      {/* --- LEADERSHIP TEAM --- */}
+      /* {/* --- LEADERSHIP TEAM --- */}
       <Section className="py-24">
          <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Meet the Leadership</h2>
@@ -206,7 +206,7 @@ const About: React.FC = () => {
             ))}
          </div>
       </Section>
-
+ */
       {/* --- CULTURE GALLERY --- */}
       <div className="bg-brand-dark text-white py-24 overflow-hidden">
          <div className="max-w-7xl mx-auto px-4 mb-12 flex justify-between items-end">
