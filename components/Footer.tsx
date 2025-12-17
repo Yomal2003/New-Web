@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; 2025 Coaxia Agency. All rights reserved.</p>
+            <p>&copy; 2025 Coaxia Agency. Powered by YB creation.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
                 <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
                 <a href="#" className="hover:text-white">Terms of Service</a>
